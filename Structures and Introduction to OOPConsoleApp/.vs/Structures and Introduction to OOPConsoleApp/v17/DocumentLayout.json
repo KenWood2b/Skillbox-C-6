@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|d:\\c#\\structures and introduction to oopconsoleapp\\structures and introduction to oopconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|solutionrelative:structures and introduction to oopconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|d:\\c#\\structures and introduction to oopconsoleapp\\structures and introduction to oopconsoleapp\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|solutionrelative:structures and introduction to oopconsoleapp\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|d:\\c#\\structures and introduction to oopconsoleapp\\structures and introduction to oopconsoleapp\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60EC0487-5434-4ADC-8841-286CB63514E2}|Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp.csproj|solutionrelative:structures and introduction to oopconsoleapp\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{93c5e7ad-af06-49e6-a756-b8f3eaca790d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Repository.cs",
+              "RelativeDocumentMoniker": "Structures and Introduction to OOPConsoleApp\\Repository.cs",
+              "ToolTip": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Repository.cs",
+              "RelativeToolTip": "Structures and Introduction to OOPConsoleApp\\Repository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T13:13:28.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Worker.cs",
+              "RelativeDocumentMoniker": "Structures and Introduction to OOPConsoleApp\\Worker.cs",
+              "ToolTip": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Worker.cs",
+              "RelativeToolTip": "Structures and Introduction to OOPConsoleApp\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T13:10:03.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Structures and Introduction to OOPConsoleApp\\Program.cs",
+              "ToolTip": "D:\\C#\\Structures and Introduction to OOPConsoleApp\\Structures and Introduction to OOPConsoleApp\\Program.cs",
+              "RelativeToolTip": "Structures and Introduction to OOPConsoleApp\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAuwDcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:11:48.471Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

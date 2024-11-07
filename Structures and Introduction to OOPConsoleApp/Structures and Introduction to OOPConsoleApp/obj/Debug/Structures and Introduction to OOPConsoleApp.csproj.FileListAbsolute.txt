@@ -1,0 +1,7 @@
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\obj\Debug\Structures and Introduction to OOPConsoleApp.csproj.AssemblyReference.cache
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\obj\Debug\Structures and Introduction to OOPConsoleApp.csproj.CoreCompileInputs.cache
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\bin\Debug\Structures and Introduction to OOPConsoleApp.exe.config
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\bin\Debug\Structures and Introduction to OOPConsoleApp.exe
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\bin\Debug\Structures and Introduction to OOPConsoleApp.pdb
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\obj\Debug\Structures and Introduction to OOPConsoleApp.exe
+D:\C#\Structures and Introduction to OOPConsoleApp\Structures and Introduction to OOPConsoleApp\obj\Debug\Structures and Introduction to OOPConsoleApp.pdb
