@@ -65,15 +65,49 @@ namespace Structures_and_Introduction_to_OOPConsoleApp
         private Worker ParseWorker(string line)
         {
             var data = line.Split('#');
+            if (data.Length < 7)
+            {
+                throw new FormatException("Неверный формат данных.");
+            }
+
+            if (!int.TryParse(data[0], out int id))
+            {
+                throw new FormatException("Некорректный ID.");
+            }
+
+            if (!DateTime.TryParse(data[1], out DateTime dateAdded))
+            {
+                throw new FormatException("Некорректная дата добавления.");
+            }
+
+            string fio = data[2];
+
+            if (!int.TryParse(data[3], out int age))
+            {
+                throw new FormatException("Некорректный возраст.");
+            }
+
+            if (!int.TryParse(data[4], out int height))
+            {
+                throw new FormatException("Некорректный рост.");
+            }
+
+            if (!DateTime.TryParse(data[5], out DateTime birthDate))
+            {
+                throw new FormatException("Некорректная дата рождения.");
+            }
+
+            string birthPlace = data[6];
+
             return new Worker
             {
-                Id = int.Parse(data[0]),
-                DateAdded = DateTime.Parse(data[1]),
-                FIO = data[2],
-                Age = int.Parse(data[3]),
-                Height = int.Parse(data[4]),
-                BirthDate = DateTime.Parse(data[5]),
-                BirthPlace = data[6]
+                Id = id,
+                DateAdded = dateAdded,
+                FIO = fio,
+                Age = age,
+                Height = height,
+                BirthDate = birthDate,
+                BirthPlace = birthPlace
             };
         }
 

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Structures_and_Introduction_to_OOPConsoleApp
 {
@@ -36,30 +32,59 @@ namespace Structures_and_Introduction_to_OOPConsoleApp
                         break;
                     case "2":
                         Console.Write("Введите ID записи: ");
-                        int id = int.Parse(Console.ReadLine());
-                        var workerById = repository.GetWorkerById(id);
-                        Console.WriteLine(workerById.Equals(default(Worker)) ? "Запись не найдена" : workerById.ToString());
+                        if (int.TryParse(Console.ReadLine(), out int id))
+                        {
+                            var workerById = repository.GetWorkerById(id);
+                            Console.WriteLine(workerById.Equals(default(Worker)) ? "Запись не найдена" : workerById.ToString());
+                        }
+                        else
+                        {
+                            Console.WriteLine("Некорректный ввод. Введите целое число.");
+                        }
                         break;
                     case "3":
                         var worker = CreateWorker();
-                        repository.AddWorker(worker);
-                        Console.WriteLine("Запись добавлена.");
+                        if (!worker.Equals(default(Worker)))
+                        {
+                            repository.AddWorker(worker);
+                            Console.WriteLine("Запись добавлена.");
+                        }
                         break;
                     case "4":
                         Console.Write("Введите ID записи для удаления: ");
-                        int deleteId = int.Parse(Console.ReadLine());
-                        repository.DeleteWorker(deleteId);
-                        Console.WriteLine("Запись удалена.");
+                        if (int.TryParse(Console.ReadLine(), out int deleteId))
+                        {
+                            repository.DeleteWorker(deleteId);
+                            Console.WriteLine("Запись удалена.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Некорректный ввод. Введите целое число.");
+                        }
                         break;
                     case "5":
                         Console.Write("Введите начальную дату (дд.мм.гггг): ");
-                        DateTime dateFrom = DateTime.Parse(Console.ReadLine());
-                        Console.Write("Введите конечную дату (дд.мм.гггг): ");
-                        DateTime dateTo = DateTime.Parse(Console.ReadLine());
-                        var workersInRange = repository.GetWorkersBetweenTwoDates(dateFrom, dateTo);
-                        foreach (var workerInRange in workersInRange)
+                        DateTime dateFrom;
+                        if (DateTime.TryParseExact(Console.ReadLine(), "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out dateFrom))
                         {
-                            Console.WriteLine(workerInRange);
+                            Console.Write("Введите конечную дату (дд.мм.гггг): ");
+                            DateTime dateTo;
+                            if (DateTime.TryParseExact(Console.ReadLine(), "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out dateTo))
+                            {
+                                var workersInRange = repository.GetWorkersBetweenTwoDates(dateFrom, dateTo);
+                                foreach (var workerInRange in workersInRange)
+                                {
+                                    Console.WriteLine(workerInRange);
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Некорректный ввод даты.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Некорректный ввод даты.");
                         }
                         break;
                     case "6":
@@ -78,13 +103,25 @@ namespace Structures_and_Introduction_to_OOPConsoleApp
             string fio = Console.ReadLine();
 
             Console.Write("Введите возраст: ");
-            int age = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int age))
+            {
+                Console.WriteLine("Некорректный ввод возраста.");
+                return default;
+            }
 
             Console.Write("Введите рост: ");
-            int height = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int height))
+            {
+                Console.WriteLine("Некорректный ввод роста.");
+                return default;
+            }
 
             Console.Write("Введите дату рождения (дд.мм.гггг): ");
-            DateTime birthDate = DateTime.Parse(Console.ReadLine());
+            if (!DateTime.TryParseExact(Console.ReadLine(), "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime birthDate))
+            {
+                Console.WriteLine("Некорректный ввод даты рождения.");
+                return default;
+            }
 
             Console.Write("Введите место рождения: ");
             string birthPlace = Console.ReadLine();
